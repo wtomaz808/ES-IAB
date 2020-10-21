@@ -1,0 +1,117 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/51287d04-0ee2-49d4-a400-e446abef3013",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "51287d04-0ee2-49d4-a400-e446abef3013",
+        "TenantId": "51287d04-0ee2-49d4-a400-e446abef3013",
+        "DisplayName": "Tenant Root Group",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": null,
+        "ParentName": null,
+        "ParentDisplayName": null,
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/CSAtrainingMG",
+            "Name": "CSAtrainingMG",
+            "DisplayName": "CSATrng",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/EntSc",
+            "Name": "EntSc",
+            "DisplayName": "EntSc",
+            "Children": [
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/EntSc-sandboxes",
+                "Name": "EntSc-sandboxes",
+                "DisplayName": "entSc-sandboxes",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/EntSc-landingzones",
+                "Name": "EntSc-landingzones",
+                "DisplayName": "entSc-landingzones",
+                "Children": [
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/EntSc-online",
+                    "Name": "EntSc-online",
+                    "DisplayName": "entSc-online",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/entSc-corp",
+                    "Name": "entSc-corp",
+                    "DisplayName": "entSc-corp",
+                    "Children": null
+                  }
+                ]
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/EntSc-platform",
+                "Name": "EntSc-platform",
+                "DisplayName": "entSc-platform",
+                "Children": [
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/EntSc-management",
+                    "Name": "EntSc-management",
+                    "DisplayName": "entSc-management",
+                    "Children": [
+                      {
+                        "Type": "/subscriptions",
+                        "Id": "/subscriptions/5d178b5e-0753-4c65-a546-79e6ba52543b",
+                        "Name": "5d178b5e-0753-4c65-a546-79e6ba52543b",
+                        "DisplayName": "Visual Studio Enterprise Subscription",
+                        "Children": null
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/entSc-connectivity",
+                    "Name": "entSc-connectivity",
+                    "DisplayName": "entSc-connectivity",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/entSc-identity",
+                    "Name": "entSc-identity",
+                    "DisplayName": "entSc-identity",
+                    "Children": null
+                  }
+                ]
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/EntSc-decommissioned",
+                "Name": "EntSc-decommissioned",
+                "DisplayName": "entSc-decommissioned",
+                "Children": null
+              }
+            ]
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": [],
+          "roleAssignments": []
+        }
+      }
+    }
+  }
+}
