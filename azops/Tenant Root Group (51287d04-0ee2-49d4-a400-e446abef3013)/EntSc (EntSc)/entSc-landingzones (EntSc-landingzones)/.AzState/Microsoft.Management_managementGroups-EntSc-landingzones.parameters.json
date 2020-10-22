@@ -21,6 +21,13 @@
             "Name": "EntSc-online",
             "DisplayName": "entSc-online",
             "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/entSc-corp",
+            "Name": "entSc-corp",
+            "DisplayName": "entSc-corp",
+            "Children": null
           }
         ],
         "properties": {
