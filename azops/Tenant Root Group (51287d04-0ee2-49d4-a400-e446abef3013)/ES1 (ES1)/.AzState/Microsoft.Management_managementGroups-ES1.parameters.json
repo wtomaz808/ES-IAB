@@ -34,14 +34,59 @@
             "Id": "/providers/Microsoft.Management/managementGroups/ES1-platform",
             "Name": "ES1-platform",
             "DisplayName": "ES1-platform",
-            "Children": null
+            "Children": [
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/ES1-connectivity",
+                "Name": "ES1-connectivity",
+                "DisplayName": "ES1-connectivity",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/ES1-management",
+                "Name": "ES1-management",
+                "DisplayName": "ES1-management",
+                "Children": [
+                  {
+                    "Type": "/subscriptions",
+                    "Id": "/subscriptions/5d178b5e-0753-4c65-a546-79e6ba52543b",
+                    "Name": "5d178b5e-0753-4c65-a546-79e6ba52543b",
+                    "DisplayName": "Visual Studio Enterprise Subscription",
+                    "Children": null
+                  }
+                ]
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/ES1-identity",
+                "Name": "ES1-identity",
+                "DisplayName": "ES1-identity",
+                "Children": null
+              }
+            ]
           },
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
             "Id": "/providers/Microsoft.Management/managementGroups/ES1-landingzones",
             "Name": "ES1-landingzones",
             "DisplayName": "ES1-landingzones",
-            "Children": null
+            "Children": [
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/ES1-corp",
+                "Name": "ES1-corp",
+                "DisplayName": "ES1-corp",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/ES1-online",
+                "Name": "ES1-online",
+                "DisplayName": "ES1-online",
+                "Children": null
+              }
+            ]
           }
         ],
         "properties": {
@@ -11319,7 +11364,254 @@
               "SubscriptionId": null
             }
           ],
-          "policyAssignments": [],
+          "policyAssignments": [
+            {
+              "Identity": {
+                "principalId": "befbf36d-adf8-4565-a39d-5f531c1b5d83",
+                "tenantId": "51287d04-0ee2-49d4-a400-e446abef3013",
+                "type": "SystemAssigned"
+              },
+              "Location": "eastus",
+              "Name": "Deploy-ASC-Monitoring",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ES1/providers/Microsoft.Authorization/policyAssignments/Deploy-ASC-Monitoring",
+              "Properties": {
+                "Description": "ASC-Monitoring",
+                "DisplayName": "ASC-Monitoring",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ES1"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ES1/providers/Microsoft.Authorization/policyAssignments/Deploy-ASC-Monitoring",
+              "ResourceName": "Deploy-ASC-Monitoring",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "principalId": "7e41f27b-7afe-4163-9b63-545777d650ec",
+                "tenantId": "51287d04-0ee2-49d4-a400-e446abef3013",
+                "type": "SystemAssigned"
+              },
+              "Location": "eastus",
+              "Name": "Deploy-ASC-Security",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ES1/providers/Microsoft.Authorization/policyAssignments/Deploy-ASC-Security",
+              "Properties": {
+                "Description": "Deploy-ASC",
+                "DisplayName": "Deploy-ASC",
+                "NotScopes": null,
+                "Parameters": {
+                  "pricingTierAppServices": {
+                    "value": "Standard"
+                  },
+                  "pricingTierContainerRegistry": {
+                    "value": "Standard"
+                  },
+                  "pricingTierKeyVaults": {
+                    "value": "Standard"
+                  },
+                  "pricingTierKubernetesService": {
+                    "value": "Standard"
+                  },
+                  "pricingTierSqlServers": {
+                    "value": "Standard"
+                  },
+                  "pricingTierStorageAccounts": {
+                    "value": "Standard"
+                  },
+                  "pricingTierVms": {
+                    "value": "Standard"
+                  }
+                },
+                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/ES1/providers/Microsoft.Authorization/policyDefinitions/Deploy-ASC-Standard",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ES1"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ES1/providers/Microsoft.Authorization/policyAssignments/Deploy-ASC-Security",
+              "ResourceName": "Deploy-ASC-Security",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "principalId": "9f282f11-11b6-4808-a600-7c9590246f8e",
+                "tenantId": "51287d04-0ee2-49d4-a400-e446abef3013",
+                "type": "SystemAssigned"
+              },
+              "Location": "eastus",
+              "Name": "Deploy-AzActivity-Log",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ES1/providers/Microsoft.Authorization/policyAssignments/Deploy-AzActivity-Log",
+              "Properties": {
+                "Description": "Deploy-AzActivity-Log",
+                "DisplayName": "Deploy-AzActivity-Log",
+                "NotScopes": null,
+                "Parameters": {
+                  "logAnalytics": {
+                    "value": "/subscriptions/5d178b5e-0753-4c65-a546-79e6ba52543b/resourcegroups/es1-mgmt/providers/microsoft.operationalinsights/workspaces/es1-la-5d178b5e-0753-4c65-a546-79e6ba52543b"
+                  }
+                },
+                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/ES1/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-ActivityLog",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ES1"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ES1/providers/Microsoft.Authorization/policyAssignments/Deploy-AzActivity-Log",
+              "ResourceName": "Deploy-AzActivity-Log",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "principalId": "b41d7cf0-080e-4579-ad8c-cab068593818",
+                "tenantId": "51287d04-0ee2-49d4-a400-e446abef3013",
+                "type": "SystemAssigned"
+              },
+              "Location": "eastus",
+              "Name": "Deploy-LX-Arc-Monitoring",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ES1/providers/Microsoft.Authorization/policyAssignments/Deploy-LX-Arc-Monitoring",
+              "Properties": {
+                "Description": "Deploy-Linux-Arc-Monitoring",
+                "DisplayName": "Deploy-Linux-Arc-Monitoring",
+                "NotScopes": null,
+                "Parameters": {
+                  "logAnalytics": {
+                    "value": "/subscriptions/5d178b5e-0753-4c65-a546-79e6ba52543b/resourcegroups/es1-mgmt/providers/microsoft.operationalinsights/workspaces/es1-la-5d178b5e-0753-4c65-a546-79e6ba52543b"
+                  }
+                },
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/9d2b61b4-1d14-4a63-be30-d4498e7ad2cf",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ES1"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ES1/providers/Microsoft.Authorization/policyAssignments/Deploy-LX-Arc-Monitoring",
+              "ResourceName": "Deploy-LX-Arc-Monitoring",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "principalId": "2ad3422f-8221-4c08-9222-8dcf7eb82b3f",
+                "tenantId": "51287d04-0ee2-49d4-a400-e446abef3013",
+                "type": "SystemAssigned"
+              },
+              "Location": "eastus",
+              "Name": "Deploy-Resource-Diag",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ES1/providers/Microsoft.Authorization/policyAssignments/Deploy-Resource-Diag",
+              "Properties": {
+                "Description": "Deploy-Resource-Diag",
+                "DisplayName": "Deploy-Resource-Diag",
+                "NotScopes": null,
+                "Parameters": {
+                  "logAnalytics": {
+                    "value": "/subscriptions/5d178b5e-0753-4c65-a546-79e6ba52543b/resourcegroups/es1-mgmt/providers/microsoft.operationalinsights/workspaces/es1-la-5d178b5e-0753-4c65-a546-79e6ba52543b"
+                  }
+                },
+                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/ES1/providers/Microsoft.Authorization/policySetDefinitions/Deploy-Diag-LogAnalytics",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ES1"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ES1/providers/Microsoft.Authorization/policyAssignments/Deploy-Resource-Diag",
+              "ResourceName": "Deploy-Resource-Diag",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "principalId": "51db42b3-bfb2-46aa-bf95-7b2b47293535",
+                "tenantId": "51287d04-0ee2-49d4-a400-e446abef3013",
+                "type": "SystemAssigned"
+              },
+              "Location": "eastus",
+              "Name": "Deploy-VM-Monitoring",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ES1/providers/Microsoft.Authorization/policyAssignments/Deploy-VM-Monitoring",
+              "Properties": {
+                "Description": "Deploy-VM-Monitoring",
+                "DisplayName": "Deploy-VM-Monitoring",
+                "NotScopes": null,
+                "Parameters": {
+                  "logAnalytics_1": {
+                    "value": "/subscriptions/5d178b5e-0753-4c65-a546-79e6ba52543b/resourcegroups/es1-mgmt/providers/microsoft.operationalinsights/workspaces/es1-la-5d178b5e-0753-4c65-a546-79e6ba52543b"
+                  }
+                },
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/55f3eceb-5573-4f18-9695-226972c6d74a",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ES1"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ES1/providers/Microsoft.Authorization/policyAssignments/Deploy-VM-Monitoring",
+              "ResourceName": "Deploy-VM-Monitoring",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "principalId": "c4253e9b-afd2-405e-b7f3-9c21e3518c47",
+                "tenantId": "51287d04-0ee2-49d4-a400-e446abef3013",
+                "type": "SystemAssigned"
+              },
+              "Location": "eastus",
+              "Name": "Deploy-VMSS-Monitoring",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ES1/providers/Microsoft.Authorization/policyAssignments/Deploy-VMSS-Monitoring",
+              "Properties": {
+                "Description": "Deploy-VMSS-Monitoring",
+                "DisplayName": "Deploy-VMSS-Monitoring",
+                "NotScopes": null,
+                "Parameters": {
+                  "logAnalytics_1": {
+                    "value": "/subscriptions/5d178b5e-0753-4c65-a546-79e6ba52543b/resourcegroups/es1-mgmt/providers/microsoft.operationalinsights/workspaces/es1-la-5d178b5e-0753-4c65-a546-79e6ba52543b"
+                  }
+                },
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/75714362-cae7-409e-9b99-a8e5075b7fad",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ES1"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ES1/providers/Microsoft.Authorization/policyAssignments/Deploy-VMSS-Monitoring",
+              "ResourceName": "Deploy-VMSS-Monitoring",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "principalId": "98d80873-96eb-4b4b-a03b-d8a43a132343",
+                "tenantId": "51287d04-0ee2-49d4-a400-e446abef3013",
+                "type": "SystemAssigned"
+              },
+              "Location": "eastus",
+              "Name": "Deploy-WS-Arc-Monitoring",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ES1/providers/Microsoft.Authorization/policyAssignments/Deploy-WS-Arc-Monitoring",
+              "Properties": {
+                "Description": "Deploy-Windows-Arc-Monitoring",
+                "DisplayName": "Deploy-Windows-Arc-Monitoring",
+                "NotScopes": null,
+                "Parameters": {
+                  "logAnalytics": {
+                    "value": "/subscriptions/5d178b5e-0753-4c65-a546-79e6ba52543b/resourcegroups/es1-mgmt/providers/microsoft.operationalinsights/workspaces/es1-la-5d178b5e-0753-4c65-a546-79e6ba52543b"
+                  }
+                },
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/69af7d4a-7b18-4044-93a9-2651498ef203",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ES1"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ES1/providers/Microsoft.Authorization/policyAssignments/Deploy-WS-Arc-Monitoring",
+              "ResourceName": "Deploy-WS-Arc-Monitoring",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            }
+          ],
           "roleDefinitions": [],
           "roleAssignments": []
         }

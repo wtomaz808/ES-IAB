@@ -20,15 +20,7 @@
             "Id": "/providers/Microsoft.Management/managementGroups/EntSc-management",
             "Name": "EntSc-management",
             "DisplayName": "entSc-management",
-            "Children": [
-              {
-                "Type": "/subscriptions",
-                "Id": "/subscriptions/5d178b5e-0753-4c65-a546-79e6ba52543b",
-                "Name": "5d178b5e-0753-4c65-a546-79e6ba52543b",
-                "DisplayName": "Visual Studio Enterprise Subscription",
-                "Children": null
-              }
-            ]
+            "Children": null
           },
           {
             "Type": "/providers/Microsoft.Management/managementGroups",

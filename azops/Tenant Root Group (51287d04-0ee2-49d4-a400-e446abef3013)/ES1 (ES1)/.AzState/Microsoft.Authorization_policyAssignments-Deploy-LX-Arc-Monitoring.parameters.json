@@ -1,0 +1,37 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "b41d7cf0-080e-4579-ad8c-cab068593818",
+          "tenantId": "51287d04-0ee2-49d4-a400-e446abef3013",
+          "type": "SystemAssigned"
+        },
+        "Location": "eastus",
+        "Name": "Deploy-LX-Arc-Monitoring",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ES1/providers/Microsoft.Authorization/policyAssignments/Deploy-LX-Arc-Monitoring",
+        "Properties": {
+          "Description": "Deploy-Linux-Arc-Monitoring",
+          "DisplayName": "Deploy-Linux-Arc-Monitoring",
+          "NotScopes": null,
+          "Parameters": {
+            "logAnalytics": {
+              "value": "/subscriptions/5d178b5e-0753-4c65-a546-79e6ba52543b/resourcegroups/es1-mgmt/providers/microsoft.operationalinsights/workspaces/es1-la-5d178b5e-0753-4c65-a546-79e6ba52543b"
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/9d2b61b4-1d14-4a63-be30-d4498e7ad2cf",
+          "Scope": "/providers/Microsoft.Management/managementGroups/ES1"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/ES1/providers/Microsoft.Authorization/policyAssignments/Deploy-LX-Arc-Monitoring",
+        "ResourceName": "Deploy-LX-Arc-Monitoring",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

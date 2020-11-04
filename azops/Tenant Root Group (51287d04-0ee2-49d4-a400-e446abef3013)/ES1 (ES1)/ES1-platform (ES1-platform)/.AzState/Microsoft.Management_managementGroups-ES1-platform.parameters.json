@@ -14,7 +14,37 @@
         "ParentId": "/providers/Microsoft.Management/managementGroups/ES1",
         "ParentName": "ES1",
         "ParentDisplayName": "ES1",
-        "Children": null,
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/ES1-connectivity",
+            "Name": "ES1-connectivity",
+            "DisplayName": "ES1-connectivity",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/ES1-management",
+            "Name": "ES1-management",
+            "DisplayName": "ES1-management",
+            "Children": [
+              {
+                "Type": "/subscriptions",
+                "Id": "/subscriptions/5d178b5e-0753-4c65-a546-79e6ba52543b",
+                "Name": "5d178b5e-0753-4c65-a546-79e6ba52543b",
+                "DisplayName": "Visual Studio Enterprise Subscription",
+                "Children": null
+              }
+            ]
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/ES1-identity",
+            "Name": "ES1-identity",
+            "DisplayName": "ES1-identity",
+            "Children": null
+          }
+        ],
         "properties": {
           "policyDefinitions": [],
           "policySetDefinitions": [],

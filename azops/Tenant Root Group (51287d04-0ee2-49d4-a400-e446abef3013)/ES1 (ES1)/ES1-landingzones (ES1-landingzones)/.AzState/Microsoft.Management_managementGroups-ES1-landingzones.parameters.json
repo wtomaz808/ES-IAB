@@ -14,7 +14,22 @@
         "ParentId": "/providers/Microsoft.Management/managementGroups/ES1",
         "ParentName": "ES1",
         "ParentDisplayName": "ES1",
-        "Children": null,
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/ES1-corp",
+            "Name": "ES1-corp",
+            "DisplayName": "ES1-corp",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/ES1-online",
+            "Name": "ES1-online",
+            "DisplayName": "ES1-online",
+            "Children": null
+          }
+        ],
         "properties": {
           "policyDefinitions": [],
           "policySetDefinitions": [],

@@ -4,16 +4,16 @@
   "parameters": {
     "input": {
       "value": {
-        "Id": "/providers/Microsoft.Management/managementGroups/EntSc-management",
+        "Id": "/providers/Microsoft.Management/managementGroups/ES1-connectivity",
         "Type": "/providers/Microsoft.Management/managementGroups",
-        "Name": "EntSc-management",
+        "Name": "ES1-connectivity",
         "TenantId": "51287d04-0ee2-49d4-a400-e446abef3013",
-        "DisplayName": "entSc-management",
+        "DisplayName": "ES1-connectivity",
         "UpdatedTime": "0001-01-01T00:00:00Z",
         "UpdatedBy": null,
-        "ParentId": "/providers/Microsoft.Management/managementGroups/EntSc-platform",
-        "ParentName": "EntSc-platform",
-        "ParentDisplayName": "entSc-platform",
+        "ParentId": "/providers/Microsoft.Management/managementGroups/ES1-platform",
+        "ParentName": "ES1-platform",
+        "ParentDisplayName": "ES1-platform",
         "Children": null,
         "properties": {
           "policyDefinitions": [],
