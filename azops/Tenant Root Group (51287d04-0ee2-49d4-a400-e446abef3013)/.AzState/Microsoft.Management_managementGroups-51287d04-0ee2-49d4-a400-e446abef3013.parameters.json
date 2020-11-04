@@ -102,6 +102,42 @@
                 "Children": null
               }
             ]
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/ES1",
+            "Name": "ES1",
+            "DisplayName": "ES1",
+            "Children": [
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/ES1-decommissioned",
+                "Name": "ES1-decommissioned",
+                "DisplayName": "ES1-decommissioned",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/ES1-sandboxes",
+                "Name": "ES1-sandboxes",
+                "DisplayName": "ES1-sandboxes",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/ES1-platform",
+                "Name": "ES1-platform",
+                "DisplayName": "ES1-platform",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/ES1-landingzones",
+                "Name": "ES1-landingzones",
+                "DisplayName": "ES1-landingzones",
+                "Children": null
+              }
+            ]
           }
         ],
         "properties": {

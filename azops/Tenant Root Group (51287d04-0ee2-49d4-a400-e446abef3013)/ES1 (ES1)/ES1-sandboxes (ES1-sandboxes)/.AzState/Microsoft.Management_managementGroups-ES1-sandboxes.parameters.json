@@ -1,0 +1,28 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/ES1-sandboxes",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "ES1-sandboxes",
+        "TenantId": "51287d04-0ee2-49d4-a400-e446abef3013",
+        "DisplayName": "ES1-sandboxes",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/ES1",
+        "ParentName": "ES1",
+        "ParentDisplayName": "ES1",
+        "Children": null,
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": [],
+          "roleAssignments": []
+        }
+      }
+    }
+  }
+}
