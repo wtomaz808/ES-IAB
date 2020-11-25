@@ -9,8 +9,8 @@
         "Name": "ES1-platform",
         "TenantId": "51287d04-0ee2-49d4-a400-e446abef3013",
         "DisplayName": "ES1-platform",
-        "UpdatedTime": "0001-01-01T00:00:00Z",
-        "UpdatedBy": null,
+        "UpdatedTime": "2020-11-04T00:17:58.2312458Z",
+        "UpdatedBy": "d52eed29-e404-4694-9f14-57418d160678",
         "ParentId": "/providers/Microsoft.Management/managementGroups/ES1",
         "ParentName": "ES1",
         "ParentDisplayName": "ES1",
@@ -27,15 +27,7 @@
             "Id": "/providers/Microsoft.Management/managementGroups/ES1-management",
             "Name": "ES1-management",
             "DisplayName": "ES1-management",
-            "Children": [
-              {
-                "Type": "/subscriptions",
-                "Id": "/subscriptions/5d178b5e-0753-4c65-a546-79e6ba52543b",
-                "Name": "5d178b5e-0753-4c65-a546-79e6ba52543b",
-                "DisplayName": "Visual Studio Enterprise Subscription",
-                "Children": null
-              }
-            ]
+            "Children": null
           },
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
@@ -44,14 +36,7 @@
             "DisplayName": "ES1-identity",
             "Children": null
           }
-        ],
-        "properties": {
-          "policyDefinitions": [],
-          "policySetDefinitions": [],
-          "policyAssignments": [],
-          "roleDefinitions": [],
-          "roleAssignments": []
-        }
+        ]
       }
     }
   }

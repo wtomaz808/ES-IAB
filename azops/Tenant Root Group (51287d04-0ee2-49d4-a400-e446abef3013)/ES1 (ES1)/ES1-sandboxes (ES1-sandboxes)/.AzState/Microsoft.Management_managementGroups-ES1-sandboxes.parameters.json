@@ -9,19 +9,12 @@
         "Name": "ES1-sandboxes",
         "TenantId": "51287d04-0ee2-49d4-a400-e446abef3013",
         "DisplayName": "ES1-sandboxes",
-        "UpdatedTime": "0001-01-01T00:00:00Z",
-        "UpdatedBy": null,
+        "UpdatedTime": "2020-11-04T00:17:58.1843914Z",
+        "UpdatedBy": "d52eed29-e404-4694-9f14-57418d160678",
         "ParentId": "/providers/Microsoft.Management/managementGroups/ES1",
         "ParentName": "ES1",
         "ParentDisplayName": "ES1",
-        "Children": null,
-        "properties": {
-          "policyDefinitions": [],
-          "policySetDefinitions": [],
-          "policyAssignments": [],
-          "roleDefinitions": [],
-          "roleAssignments": []
-        }
+        "Children": null
       }
     }
   }

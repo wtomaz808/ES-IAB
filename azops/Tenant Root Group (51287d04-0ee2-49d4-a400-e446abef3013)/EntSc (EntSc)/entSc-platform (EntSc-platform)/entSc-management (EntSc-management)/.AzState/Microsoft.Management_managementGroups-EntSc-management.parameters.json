@@ -9,19 +9,12 @@
         "Name": "EntSc-management",
         "TenantId": "51287d04-0ee2-49d4-a400-e446abef3013",
         "DisplayName": "entSc-management",
-        "UpdatedTime": "0001-01-01T00:00:00Z",
-        "UpdatedBy": null,
+        "UpdatedTime": "2020-10-21T18:52:28.1133089Z",
+        "UpdatedBy": "d52eed29-e404-4694-9f14-57418d160678",
         "ParentId": "/providers/Microsoft.Management/managementGroups/EntSc-platform",
         "ParentName": "EntSc-platform",
         "ParentDisplayName": "entSc-platform",
-        "Children": null,
-        "properties": {
-          "policyDefinitions": [],
-          "policySetDefinitions": [],
-          "policyAssignments": [],
-          "roleDefinitions": [],
-          "roleAssignments": []
-        }
+        "Children": null
       }
     }
   }
