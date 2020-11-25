@@ -9,8 +9,8 @@
         "Name": "51287d04-0ee2-49d4-a400-e446abef3013",
         "TenantId": "51287d04-0ee2-49d4-a400-e446abef3013",
         "DisplayName": "Tenant Root Group",
-        "UpdatedTime": "0001-01-01T00:00:00Z",
-        "UpdatedBy": null,
+        "UpdatedTime": "2020-10-17T02:21:45.3900426Z",
+        "UpdatedBy": "Tenant Backfill Job",
         "ParentId": null,
         "ParentName": null,
         "ParentDisplayName": null,
@@ -27,163 +27,16 @@
             "Id": "/providers/Microsoft.Management/managementGroups/EntSc",
             "Name": "EntSc",
             "DisplayName": "EntSc",
-            "Children": [
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/EntSc-sandboxes",
-                "Name": "EntSc-sandboxes",
-                "DisplayName": "entSc-sandboxes",
-                "Children": null
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/EntSc-landingzones",
-                "Name": "EntSc-landingzones",
-                "DisplayName": "entSc-landingzones",
-                "Children": [
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/EntSc-online",
-                    "Name": "EntSc-online",
-                    "DisplayName": "entSc-online",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/entSc-corp",
-                    "Name": "entSc-corp",
-                    "DisplayName": "entSc-corp",
-                    "Children": null
-                  }
-                ]
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/EntSc-platform",
-                "Name": "EntSc-platform",
-                "DisplayName": "entSc-platform",
-                "Children": [
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/EntSc-management",
-                    "Name": "EntSc-management",
-                    "DisplayName": "entSc-management",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/entSc-connectivity",
-                    "Name": "entSc-connectivity",
-                    "DisplayName": "entSc-connectivity",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/entSc-identity",
-                    "Name": "entSc-identity",
-                    "DisplayName": "entSc-identity",
-                    "Children": null
-                  }
-                ]
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/EntSc-decommissioned",
-                "Name": "EntSc-decommissioned",
-                "DisplayName": "entSc-decommissioned",
-                "Children": null
-              }
-            ]
+            "Children": null
           },
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
             "Id": "/providers/Microsoft.Management/managementGroups/ES1",
             "Name": "ES1",
             "DisplayName": "ES1",
-            "Children": [
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/ES1-decommissioned",
-                "Name": "ES1-decommissioned",
-                "DisplayName": "ES1-decommissioned",
-                "Children": null
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/ES1-sandboxes",
-                "Name": "ES1-sandboxes",
-                "DisplayName": "ES1-sandboxes",
-                "Children": null
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/ES1-platform",
-                "Name": "ES1-platform",
-                "DisplayName": "ES1-platform",
-                "Children": [
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/ES1-connectivity",
-                    "Name": "ES1-connectivity",
-                    "DisplayName": "ES1-connectivity",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/ES1-management",
-                    "Name": "ES1-management",
-                    "DisplayName": "ES1-management",
-                    "Children": [
-                      {
-                        "Type": "/subscriptions",
-                        "Id": "/subscriptions/5d178b5e-0753-4c65-a546-79e6ba52543b",
-                        "Name": "5d178b5e-0753-4c65-a546-79e6ba52543b",
-                        "DisplayName": "Visual Studio Enterprise Subscription",
-                        "Children": null
-                      }
-                    ]
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/ES1-identity",
-                    "Name": "ES1-identity",
-                    "DisplayName": "ES1-identity",
-                    "Children": null
-                  }
-                ]
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/ES1-landingzones",
-                "Name": "ES1-landingzones",
-                "DisplayName": "ES1-landingzones",
-                "Children": [
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/ES1-corp",
-                    "Name": "ES1-corp",
-                    "DisplayName": "ES1-corp",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/ES1-online",
-                    "Name": "ES1-online",
-                    "DisplayName": "ES1-online",
-                    "Children": null
-                  }
-                ]
-              }
-            ]
+            "Children": null
           }
-        ],
-        "properties": {
-          "policyDefinitions": [],
-          "policySetDefinitions": [],
-          "policyAssignments": [],
-          "roleDefinitions": [],
-          "roleAssignments": []
-        }
+        ]
       }
     }
   }
